@@ -1,0 +1,10 @@
+<%= render "navbar" %>
+<h1>Welcome to the Flats (<%= @flats.count %>)</h1>
+
+<ul class="cards">
+    <% @flats.each do |flat| %>
+        <li class="card">
+          <%= link_to flat.name, flat %>
+        </li>
+    <% end %>
+  </ul>
