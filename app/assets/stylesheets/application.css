@@ -1,3 +1,8 @@
+.addflat-btn {
+    color: #fff;
+    text-decoration: none;
+}
+
 .cards {
     display: flex;
     justify-content: center;
@@ -5,9 +10,58 @@
 }
 
 .card {
-    width: 200px;
+    width: 350px;
     height: 350px;
     background-color: #ccc;
     display: flex;
     margin: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.21);
+}
+
+.address {
+    text-decoration: none;
+    color: #000;
+}
+
+.price-per-night {
+    text-decoration: none;
+    color: #000;
+}
+.n-guests {
+    text-decoration: none;
+    color: #000;
+}
+
+.list {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.more-info {
+    width: 100%;
+    height:100px;
+    background-color: #dd3444;
+    margin-top:140px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.more-info p {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#image {
+    background-image: url("https://images.unsplash.com/photo-1620332372374-f108c53d2e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80");
+    height: 1000px;
 }

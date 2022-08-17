@@ -1,0 +1,12 @@
+<%= render "navbar" %>
+<h1><%= @flat.name %></h1>
+
+<p><%= @flat.address %></p>
+
+<ul>
+  <%= link_to "Edit", edit_flat_path(@flat), class:"edit-btn" %>
+  <%= link_to "Destroy", flat_path(@flat), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  }, class:"destroy-btn" %>
+</ul>

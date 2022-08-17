@@ -1,10 +1,24 @@
 <%= render "navbar" %>
 <h1>Welcome to the Flats (<%= @flats.count %>)</h1>
 
-<ul class="cards">
+<div class="cards">
     <% @flats.each do |flat| %>
-        <li class="card">
-          <%= link_to flat.name, flat %>
-        </li>
+        <div class="card">
+            <%= link_to flat.name, flat, class: "list" %>
+            <%= link_to flat.address, flat, class: "address" %>
+          <div>
+            <span><%= link_to flat.price_per_night, flat, class: "price-per-night" %>$</span>
+            <span><%= link_to flat.number_of_guests, flat, class: "n-guests" %></span>
+          </div>
+          <div class="more-info">
+              <p>More Info</p>
+          </div>
+        </div>
     <% end %>
-  </ul>
+</div>
+
+
+
+  <div id="image">
+     Rooms
+  </div>
